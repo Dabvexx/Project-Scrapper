@@ -1,0 +1,21 @@
+play as a robot scrapping machines, old cars, anything made of metal, and other robots to salvage their parts to make more robots and to sell it for more parts
+buy some more advanced parts, and the advanced parts let you salvage those advanced parts
+higher tier progression is gated behind buying that high tier to be able to gather it more effeciently
+
+you create new robots to go out into the world and gater scrap and disassemble parts, maybe even go mining to get raw raw materials to be processed
+robots will occasionally break down which can be fixed
+robots can also be melted down for metal or salvaged for boards and bolts, basically forge for raw material and salvage to recycle parts
+
+the player can and eventually will have to transfer to a new robot body as their robot will break down
+the player can change to any robot (Up in the air: robot needs to be within range of network)
+
+maybe need to place down transmitters and recievers to extend a network to communicate with a sort of "hive mind"
+
+game is in isometric perspective, with a click based movement and interaction system (can also use wasd and E to interact)
+forge to melt down scrap and metal/plastic components
+caster to make things like plates and bolts and ingots
+circuit boards will be made out of copper and plastic
+
+player has a little ui showing how many bolts have fallen out and the health of various componts, rust levels
+when rust gets high enough components will fail and be unable to be replaced.
+the player will have to switch to a new robot body as if they are just an electrical consciencness
