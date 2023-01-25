@@ -14,8 +14,12 @@ maybe need to place down transmitters and recievers to extend a network to commu
 game is in isometric perspective, with a click based movement and interaction system (can also use wasd and E to interact)
 forge to melt down scrap and metal/plastic components
 caster to make things like plates and bolts and ingots
+refinery refines ingredients, such as making quartz and diamons into dilicoln and laser lenses
 circuit boards will be made out of copper and plastic
 
 player has a little ui showing how many bolts have fallen out and the health of various componts, rust levels
 when rust gets high enough components will fail and be unable to be replaced.
 the player will have to switch to a new robot body as if they are just an electrical consciencness
+
+the way robots are crafted (or maybe the whole crafting system) 
+you have to pack the pieces in whatever way they fit, and these recipies can be saved to keep making the same recipe. maybe saved as patterns.
