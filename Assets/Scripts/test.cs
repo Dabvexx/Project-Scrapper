@@ -11,7 +11,7 @@ public class test : MonoBehaviour
     private RawMaterial resource1;
 
     [SerializeField] private GridItem item;
-    private CraftingGrid grid = new CraftingGrid(11, 11);
+    private CraftingGrid grid = new CraftingGrid();
 
     #endregion Variables
 

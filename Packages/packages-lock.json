@@ -217,6 +217,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.vexxedlib.core": {
+      "version": "https://github.com/Dabvexx/VexxedLib-Core.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2db701cdbaeac998c2682ba448c135be340e3d30"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

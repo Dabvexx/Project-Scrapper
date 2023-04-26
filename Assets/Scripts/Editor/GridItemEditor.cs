@@ -1,27 +1,48 @@
 using UnityEngine;
 using UnityEditor;
+using Sirenix.OdinInspector.Editor;
 
 ///<summary>
 /// 
 ///</summary>
 [CustomEditor(typeof(GridItem))]
-public class GridItemEditor : Editor
+public class GridItemEditor : OdinEditor
 {
-	GridItem gridItem;
+	//private SerializedProperty gridProperty;
 
-	private void OnEnable()
-	{
-	}
+	//private void OnEnable()
+	//{
+	//	gridProperty = serializedObject.FindProperty("grid");
+	//}
 
-	public override void OnInspectorGUI()
-	{
-		gridItem = (GridItem)target;
+ //   public override void OnInspectorGUI()
+ //   {
+ //       serializedObject.Update();
 
-		base.OnInspectorGUI();
-		if(GUILayout.Button("Regenerate Grid"))
-        {
-			gridItem.RegenerateGrid();
-        }
-	}
+ //       DrawDefaultInspector();
+
+ //       EditorGUILayout.Space();
+
+ //       EditorGUILayout.LabelField("Grid:");
+
+ //       gridProperty.arraySize = EditorGUILayout.IntField("Rows", gridProperty.arraySize);
+ //       for (int i = 0; i < gridProperty.arraySize; i++)
+ //       {
+ //           var row = gridProperty.GetArrayElementAtIndex(i);
+ //           row.arraySize = EditorGUILayout.IntField("Columns", row.arraySize);
+ //       }
+
+ //       EditorGUILayout.Space();
+
+ //       // Draw the table matrix
+ //       EditorGUI.BeginChangeCheck();
+ //       EditorGUILayout.PropertyField(gridProperty);
+ //       if (EditorGUI.EndChangeCheck())
+ //       {
+ //           serializedObject.ApplyModifiedProperties();
+ //       }
+
+ //       serializedObject.ApplyModifiedProperties();
+ //   }
 
 }

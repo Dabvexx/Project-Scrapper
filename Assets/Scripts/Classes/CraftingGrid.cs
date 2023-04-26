@@ -1,45 +1,35 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Text;
+using Sirenix.Serialization;
 
 ///<summary>
-///
+/// Every machine will implement a crafting grid, it is up to the prefab how big the grid is
+/// maybe a machines script which controlls its outputs will set it so it can be upgraded.
 ///</summary>
 [System.Serializable]
 public class CraftingGrid
 {
-    public int gridLength;
-    public int gridWidth;
+    [OdinSerialize] public Grid grid;
 
-    public List<bool> grid;
-
-    //public List<bool> grid;
-    public CraftingGrid(int _gridLength, int _gridHeight)
+    public CraftingGrid()
     {
-        this.gridLength = _gridLength;
-        this.gridWidth = _gridHeight;
-        grid = new List<bool>();
-        //grid = new List<bool>(_gridLength * _gridHeight);
-        for (int i = 0; i < gridLength * gridWidth; i++)
-        {
-            grid.Add(false);
-        }
+        grid = new Grid();
     }
 
-    // Return bool to tell if operation was successful.
     /// <summary>
     /// Function to check if the grid item can fit where the user tries to put it.
     /// If it can't fit, will return false, while returns true if it can.
     /// </summary>
     /// <param name="gridOffset">The tile where the player clicked</param>
     /// <param name="itemOffsets">The offsets of every tile to be covered by the item</param>
-    /// <returns></returns>
+    /// <returns>If the opperation was successful.</returns>
     public bool ValidatePlacement(int initialOffset, GridItem gridItem)
     {
         // If all the tiles are valid, The grid item will flip the bits accordingly
 
         // Overall check to see if the item is bigger than the grid itself;
-        if (gridItem.grid.Count > grid.Count)
+        /*if (gridItem.grid.Count > grid.Count)
         {
             Debug.Log($"GridItem Size: {gridItem.grid.Count}, Grid Size: {grid.Count}");
             // Invalid
@@ -61,7 +51,7 @@ public class CraftingGrid
             // Invalid
             Debug.Log("Item is invalid: Too large vertically");
             return false;
-        }
+        }*/
 
         Debug.Log("Item is valid");
         return true;
@@ -83,13 +73,13 @@ public class CraftingGrid
             return false;
         }
 
-        for (int i = 0; i < gridItem.grid.Count; i++)
+        /*for (int i = 0; i < gridItem.grid.Count; i++)
         {
             // Calculate the offset to when to witch to the next row
             //int rowCounter = (initalOffset + i) * Mathf.FloorToInt(i / gridItem.gridLength);
             int index = (rowCounter * gridLength) + counter + initalOffset;
             Debug.Log($"Counter: {counter}, Row: {rowCounter}, Index: {index}, gridSize: {grid.Count}");
-            grid[index] = gridItem.grid[i];
+            //grid[index] = gridItem.grid[i];
 
             counter++;
             if ((i + 1) % gridItem.gridLength == 0)
@@ -97,13 +87,13 @@ public class CraftingGrid
                 rowCounter++;
                 counter = 0;
             }
-        }
+        }*/
 
-        Debug.Log(PrintBits());
+        //Debug.Log(PrintBits());
         return true;
     }
 
-    public bool ConfirmCraft()
+    /*public bool ConfirmCraft()
     {
         foreach (var cell in grid)
         {
@@ -113,9 +103,9 @@ public class CraftingGrid
             }
         }
         return true;
-    }
+    }*/
 
-    public string PrintBits()
+    /*public string PrintBits()
     {
         StringBuilder sb = new StringBuilder(gridLength * gridWidth + gridWidth);
         int i = 1;
@@ -139,5 +129,5 @@ public class CraftingGrid
             i++;
         }
         return sb.ToString();
-    }
+    }*/
 }

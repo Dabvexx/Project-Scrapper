@@ -493,7 +493,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797818225}
-  m_LocalRotation: {x: 0.10669003, y: -0.38012317, z: 0.04419245, w: 0.91769856}
+  m_LocalRotation: {x: 0.10669005, y: -0.38012317, z: 0.044192456, w: 0.91769856}
   m_LocalPosition: {x: 15, y: 6.35, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -580,7 +580,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.10669003, y: -0.38012317, z: 0.04419245, w: 0.91769856}
+  m_LocalRotation: {x: 0.10669005, y: -0.38012317, z: 0.044192456, w: 0.91769856}
   m_LocalPosition: {x: 15, y: 6.35, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -808,7 +808,6 @@ GameObject:
   - component: {fileID: 1854082390}
   - component: {fileID: 1854082389}
   - component: {fileID: 1854082388}
-  - component: {fileID: 1854082387}
   - component: {fileID: 1854082386}
   - component: {fileID: 1854082385}
   m_Layer: 0
@@ -851,20 +850,6 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &1854082387
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854082384}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1854082388
 MeshRenderer:
